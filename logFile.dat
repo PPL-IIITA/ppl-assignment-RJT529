@@ -1,0 +1,43 @@
+-----------------COUPLES-------------------
+
+Boy b3 and Girl g1
+Boy b1 and Girl g2
+Boy b4 and Girl g3
+Boy b5 and Girl g4
+Boy b2 and Girl g5
+
+
+-----------------GIFTS ALLOCATION-------------------
+
+Boy b3 gives Girl g1 the following Gifts
+G8 of worth Rs 400
+
+Boy b1 gives Girl g2 the following Gifts
+G3 of worth Rs 450
+G12 of worth Rs 530
+
+Boy b4 gives Girl g3 the following Gifts
+G15 of worth Rs 905
+G4 of worth Rs 900
+G14 of worth Rs 800
+
+Boy b5 gives Girl g4 the following Gifts
+G1 of worth Rs 550
+G5 of worth Rs 550
+
+Boy b2 gives Girl g5 the following Gifts
+G7 of worth Rs 800
+G2 of worth Rs 800
+
+
+------------------Most Compatible---------------------
+
+Boy b5 and Girl g4
+Boy b2 and Girl g5
+Boy b4 and Girl g3
+
+---------------------Most Happy------------------------
+
+Boy b5 and Girl g4
+Boy b3 and Girl g1
+Boy b4 and Girl g3

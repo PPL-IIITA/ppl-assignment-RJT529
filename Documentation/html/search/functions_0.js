@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['getattractiveness',['getAttractiveness',['../classBoy.html#a814ef4919f2ac86c6ee70f9698afad3d',1,'Boy::getAttractiveness()'],['../classGirl.html#a04cfe3e0c21240f92c19152630a40252',1,'Girl::getAttractiveness()']]],
+  ['getboy',['getBoy',['../classCouple.html#a092cbc580ea255febc3eb211c5f56512',1,'Couple']]],
+  ['getbudget',['getBudget',['../classBoy.html#a05c48b12091ebcad44ba86ba88514ac5',1,'Boy']]],
+  ['getcompatibility',['getCompatibility',['../classCouple.html#aab84b87970e19e90cec4a07782ad5380',1,'Couple']]],
+  ['getcriterion',['getCriterion',['../classGirl.html#a9dcd593744beb19f97acc0e3bbff6f76',1,'Girl']]],
+  ['getgifts',['getGifts',['../classCouple.html#a80cef2647acb3903936372a0d70cf9cc',1,'Couple']]],
+  ['getgirl',['getGirl',['../classCouple.html#a653983df7e331c0534ae2ce42e9856c5',1,'Couple']]],
+  ['gethappiness',['getHappiness',['../classCouple.html#a9562bd3f5ace166db48803e2a564b325',1,'Couple']]],
+  ['getid',['getId',['../classGift.html#a5b276dda8fab4a4e2618ba82fc8cd787',1,'Gift']]],
+  ['getintelligence',['getIntelligence',['../classBoy.html#ad52c9e04ab591f3909d2342d6cae0168',1,'Boy::getIntelligence()'],['../classGirl.html#afe73c4c4f180aa8f5e0bc4f87455ec0b',1,'Girl::getIntelligence()']]],
+  ['getmaintenance',['getMaintenance',['../classGirl.html#a6192affb0721b385d2c5d83a011a869e',1,'Girl']]],
+  ['getname',['getname',['../classGirl.html#a321ead86446e014c9b513eba8f811feb',1,'Girl::getname()'],['../classBoy.html#a53e90a641c928c0849e33eca847e902d',1,'Boy::getName()']]],
+  ['getnum',['getNum',['../classCouple.html#a05a3bbd0d8d6b149ae04f5306acd4439',1,'Couple']]],
+  ['getprice',['getprice',['../classGift.html#aa36f2b437e93ede1d2569e489b493441',1,'Gift']]],
+  ['getstatus',['getStatus',['../classBoy.html#a72ac2c3f82b5dbd6ec97bf46dfd62681',1,'Boy::getStatus()'],['../classGift.html#ad0630b128cb1e8208d78ceaea24dee7a',1,'Gift::getStatus()'],['../classGirl.html#af8412c80e48e58d5e19f85f30300f8cf',1,'Girl::getStatus()']]],
+  ['getthreshold',['getThreshold',['../classBoy.html#abaf6074b318b18f2b4f64f0798c7a8bf',1,'Boy']]],
+  ['gettype',['getType',['../classBoy.html#a01accc077c0824f7e28cfe391f7851c7',1,'Boy::getType()'],['../classGift.html#aa7143116bd10c7e5635252d081b42ef9',1,'Gift::getType()'],['../classGirl.html#af26252dbf5784c2c79744dd4652a3bf2',1,'Girl::getType()']]]
+];
