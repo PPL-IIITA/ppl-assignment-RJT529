@@ -1,0 +1,149 @@
+\hypertarget{classGiftAllocation}{}\section{Gift\+Allocation Class Reference}
+\label{classGiftAllocation}\index{Gift\+Allocation@{Gift\+Allocation}}
+
+
+{\ttfamily \#include $<$lib8.\+h$>$}
+
+
+
+Inheritance diagram for Gift\+Allocation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classGiftAllocation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gift\+Allocation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classGiftAllocation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGiftAllocation_a251311eacec6f50e78300c576b3938b9}{take\+Input} ()
+\item 
+void \hyperlink{classGiftAllocation_a54ab23085223d306af9aa3ded70901be}{sorting\+Gifts} ()
+\item 
+void \hyperlink{classGiftAllocation_ac75f5851dc71925a5c837c0b35a51d26}{swap} (\hyperlink{classGift}{Gift} \&a, \hyperlink{classGift}{Gift} \&b)
+\item 
+void \hyperlink{classGiftAllocation_a9ea227b1d051645d9aa54d7c4d4d0ce3}{printing\+Gifts} (\hyperlink{classCouple}{Couple} $\ast$couple)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGift}{Gift} \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts} \mbox{[}\hyperlink{Ques9_8cpp_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Gift\+Allocation@{Gift\+Allocation}!printing\+Gifts@{printing\+Gifts}}
+\index{printing\+Gifts@{printing\+Gifts}!Gift\+Allocation@{Gift\+Allocation}}
+\subsubsection[{\texorpdfstring{printing\+Gifts(\+Couple $\ast$couple)}{printingGifts(Couple *couple)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gift\+Allocation\+::printing\+Gifts (
+\begin{DoxyParamCaption}
+\item[{{\bf Couple} $\ast$}]{couple}
+\end{DoxyParamCaption}
+)}\hypertarget{classGiftAllocation_a9ea227b1d051645d9aa54d7c4d4d0ce3}{}\label{classGiftAllocation_a9ea227b1d051645d9aa54d7c4d4d0ce3}
+
+\begin{DoxyCode}
+43 \{
+44     
+45     \textcolor{comment}{//printing assigned gifts}
+46     fstream logFile(\textcolor{stringliteral}{"logFile8.dat"}, std::fstream::in | std::fstream::out | std::fstream::app);
+47     logFile<<\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)n-----------------GIFTS ALLOCATION-------------------\(\backslash\)n\(\backslash\)n"};
+48 
+49     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0 ;i < \hyperlink{dst9_8h_ac4cf4b2ab929bd23951a8676eeac086b}{C}; i++) \{
+50         logFile<<\textcolor{stringliteral}{"Boy b"}<<couples[i].getBoy()<<\textcolor{stringliteral}{" gives Girl g"}<<couples[i].getGirl()<<\textcolor{stringliteral}{" the following Gifts
+      \(\backslash\)n"};
+51         
+52         \textcolor{keywordtype}{int} * arr = couples[i].getGifts();
+53         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < couples[i].getNum(); j++) \{
+54             logFile<<\textcolor{stringliteral}{"G"}<<\hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[arr[j]-1].\hyperlink{classGift_a5b276dda8fab4a4e2618ba82fc8cd787}{getId}()<<\textcolor{stringliteral}{" of worth Rs "}<<
+      \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[arr[j]-1].\hyperlink{classGift_aa36f2b437e93ede1d2569e489b493441}{getprice}()<<\textcolor{stringliteral}{"\(\backslash\)n"};
+55         \}
+56         logFile<<endl;
+57     \}
+58 \}
+\end{DoxyCode}
+\index{Gift\+Allocation@{Gift\+Allocation}!sorting\+Gifts@{sorting\+Gifts}}
+\index{sorting\+Gifts@{sorting\+Gifts}!Gift\+Allocation@{Gift\+Allocation}}
+\subsubsection[{\texorpdfstring{sorting\+Gifts()}{sortingGifts()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gift\+Allocation\+::sorting\+Gifts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classGiftAllocation_a54ab23085223d306af9aa3ded70901be}{}\label{classGiftAllocation_a54ab23085223d306af9aa3ded70901be}
+
+\begin{DoxyCode}
+11 \{
+12     \textcolor{comment}{//sorting gifts }
+13     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0  ; i< \hyperlink{couple_8h_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}-1; i++) \{
+14         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = i+1; j < \hyperlink{couple_8h_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}; j++) \{
+15             \textcolor{keywordflow}{if}(\hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getprice() < \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[i].getprice()) \{
+16                 \hyperlink{classGiftAllocation_ac75f5851dc71925a5c837c0b35a51d26}{swap}(\hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j],\hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[i]);
+17             \}
+18         \}
+19     \}
+20 \}
+\end{DoxyCode}
+\index{Gift\+Allocation@{Gift\+Allocation}!swap@{swap}}
+\index{swap@{swap}!Gift\+Allocation@{Gift\+Allocation}}
+\subsubsection[{\texorpdfstring{swap(\+Gift \&a, Gift \&b)}{swap(Gift &a, Gift &b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gift\+Allocation\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf Gift} \&}]{a, }
+\item[{{\bf Gift} \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classGiftAllocation_ac75f5851dc71925a5c837c0b35a51d26}{}\label{classGiftAllocation_ac75f5851dc71925a5c837c0b35a51d26}
+
+\begin{DoxyCode}
+4 \{
+5     \hyperlink{classGift}{Gift} temp = a;
+6     a = b;
+7     b = temp;
+8 \}
+\end{DoxyCode}
+\index{Gift\+Allocation@{Gift\+Allocation}!take\+Input@{take\+Input}}
+\index{take\+Input@{take\+Input}!Gift\+Allocation@{Gift\+Allocation}}
+\subsubsection[{\texorpdfstring{take\+Input()}{takeInput()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gift\+Allocation\+::take\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classGiftAllocation_a251311eacec6f50e78300c576b3938b9}{}\label{classGiftAllocation_a251311eacec6f50e78300c576b3938b9}
+
+\begin{DoxyCode}
+23 \{
+24     \textcolor{keywordtype}{int} c = 0;
+25     \textcolor{keywordtype}{int} x = 0;
+26     \textcolor{keywordtype}{string} line;
+27     ifstream giftInp(\textcolor{stringliteral}{"gift.dat"});
+28     \textcolor{keywordflow}{while}(getline(giftInp,line)) \{
+29         \textcolor{keywordflow}{if}(c++ == 0) \textcolor{keywordflow}{continue};
+30         istringstream iss(line);
+31         \textcolor{keywordtype}{int} id,p,v;
+32         \textcolor{keywordtype}{char} ty;
+33         \textcolor{keywordflow}{if}((iss>>\textcolor{keywordtype}{id}>>p>>ty>>v))\{
+34             \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[x++].\hyperlink{classGift_abc74fbed8b31b5bb7745b3e0c934da9e}{setDetail}(\textcolor{keywordtype}{id},p,ty,0);
+35         \} \textcolor{keywordflow}{else} \{
+36             \textcolor{keywordflow}{break};
+37         \}
+38     \}
+39     
+40 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Gift\+Allocation@{Gift\+Allocation}!gifts@{gifts}}
+\index{gifts@{gifts}!Gift\+Allocation@{Gift\+Allocation}}
+\subsubsection[{\texorpdfstring{gifts}{gifts}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gift} Gift\+Allocation\+::gifts\mbox{[}{\bf Gf}\mbox{]}}\hypertarget{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{}\label{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lib8_8h}{lib8.\+h}\item 
+\hyperlink{lib8_8cpp}{lib8.\+cpp}\end{DoxyCompactItemize}

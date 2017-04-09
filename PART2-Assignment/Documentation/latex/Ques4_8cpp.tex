@@ -1,0 +1,450 @@
+\hypertarget{Ques4_8cpp}{}\section{Ques4.\+cpp File Reference}
+\label{Ques4_8cpp}\index{Ques4.\+cpp@{Ques4.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include \char`\"{}boy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}girl.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}couple.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gift.\+h\char`\"{}}\\*
+Include dependency graph for Ques4.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Ques4_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}{B}~9
+\item 
+\#define \hyperlink{Ques4_8cpp_aed9ea78689ecce0b7264c02c7f8a9a54}{G}~5
+\item 
+\#define \hyperlink{Ques4_8cpp_ac4cf4b2ab929bd23951a8676eeac086b}{C}~5
+\item 
+\#define \hyperlink{Ques4_8cpp_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}~15
+\item 
+\#define \hyperlink{Ques4_8cpp_a97d832ae23af4f215e801e37e4f94254}{K}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Ques4_8cpp_ac70f752855ee1cf9ceaa2d749bbad17d}{swap} (\hyperlink{classGift}{Gift} \&a, \hyperlink{classGift}{Gift} \&b)
+\item 
+void \hyperlink{Ques4_8cpp_a9ed5e5ebda90f206f83cd424ebebe79d}{swapC} (\hyperlink{classCouple}{Couple} \&a, \hyperlink{classCouple}{Couple} \&b)
+\item 
+int \hyperlink{Ques4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Ques4.\+cpp@{Ques4.\+cpp}!B@{B}}
+\index{B@{B}!Ques4.\+cpp@{Ques4.\+cpp}}
+\subsubsection[{\texorpdfstring{B}{B}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B~9}\hypertarget{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}{}\label{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}
+\index{Ques4.\+cpp@{Ques4.\+cpp}!C@{C}}
+\index{C@{C}!Ques4.\+cpp@{Ques4.\+cpp}}
+\subsubsection[{\texorpdfstring{C}{C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C~5}\hypertarget{Ques4_8cpp_ac4cf4b2ab929bd23951a8676eeac086b}{}\label{Ques4_8cpp_ac4cf4b2ab929bd23951a8676eeac086b}
+\index{Ques4.\+cpp@{Ques4.\+cpp}!G@{G}}
+\index{G@{G}!Ques4.\+cpp@{Ques4.\+cpp}}
+\subsubsection[{\texorpdfstring{G}{G}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G~5}\hypertarget{Ques4_8cpp_aed9ea78689ecce0b7264c02c7f8a9a54}{}\label{Ques4_8cpp_aed9ea78689ecce0b7264c02c7f8a9a54}
+\index{Ques4.\+cpp@{Ques4.\+cpp}!Gf@{Gf}}
+\index{Gf@{Gf}!Ques4.\+cpp@{Ques4.\+cpp}}
+\subsubsection[{\texorpdfstring{Gf}{Gf}}]{\setlength{\rightskip}{0pt plus 5cm}\#define Gf~15}\hypertarget{Ques4_8cpp_a5e0c07e523d4e77a2cafca06feb836f6}{}\label{Ques4_8cpp_a5e0c07e523d4e77a2cafca06feb836f6}
+\index{Ques4.\+cpp@{Ques4.\+cpp}!K@{K}}
+\index{K@{K}!Ques4.\+cpp@{Ques4.\+cpp}}
+\subsubsection[{\texorpdfstring{K}{K}}]{\setlength{\rightskip}{0pt plus 5cm}\#define K~2}\hypertarget{Ques4_8cpp_a97d832ae23af4f215e801e37e4f94254}{}\label{Ques4_8cpp_a97d832ae23af4f215e801e37e4f94254}
+
+
+\subsection{Function Documentation}
+\index{Ques4.\+cpp@{Ques4.\+cpp}!main@{main}}
+\index{main@{main}!Ques4.\+cpp@{Ques4.\+cpp}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{Ques4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{Ques4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+taking input from boy.\+dat
+
+taking input from girl.\+dat
+
+taking input gift.\+dat
+
+forming couples
+
+printing couples
+
+sorting gifts
+
+Assigning gifts to couples
+
+calculating happiness
+
+sorting couples according to happiness
+\begin{DoxyCode}
+36 \{
+37     \hyperlink{classBoy}{Boy} boys[\hyperlink{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}{B}];
+38     \hyperlink{classGirl}{Girl} girls[\hyperlink{Ques4_8cpp_aed9ea78689ecce0b7264c02c7f8a9a54}{G}];
+39     \hyperlink{classCouple}{Couple} couples[\hyperlink{Ques4_8cpp_ac4cf4b2ab929bd23951a8676eeac086b}{C}];
+40     \hyperlink{classGift}{Gift} gifts[\hyperlink{Ques4_8cpp_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}];
+41     
+42     \textcolor{keywordtype}{string} line;
+43     \textcolor{keywordtype}{int} c = 0, x = 0;
+44 
+45     ofstream logFile;
+46     logFile.open(\textcolor{stringliteral}{"logFile4.dat"});
+47 
+48 
+52     ifstream boyInp(\textcolor{stringliteral}{"boy.dat"});
+53     \textcolor{keywordflow}{while}(getline(boyInp,line)) \{
+54         \textcolor{keywordflow}{if}(c++ == 0) \textcolor{keywordflow}{continue};
+55         istringstream iss(line);
+56         \textcolor{keywordtype}{string} name;
+57         \textcolor{keywordtype}{int} a,i,b,t,s;
+58         \textcolor{keywordtype}{char} ty;
+59         \textcolor{keywordflow}{if}((iss>>name>>a>>i>>b>>t>>s>>ty))\{
+60             boys[x++].\hyperlink{classBoy_a6ac70867d517f6b429ce67c8eb2915ed}{setDetails}(name,a,i,b,t,s,ty);
+61         \} \textcolor{keywordflow}{else} \{
+62             \textcolor{keywordflow}{break};
+63         \}
+64     \}
+65 
+66     c = 0;
+67     x = 0;
+71     ifstream girlInp(\textcolor{stringliteral}{"girl.dat"});
+72     \textcolor{keywordflow}{while}(getline(girlInp,line)) \{
+73         \textcolor{keywordflow}{if}(c++ == 0) \textcolor{keywordflow}{continue};
+74         istringstream iss(line);
+75         \textcolor{keywordtype}{string} name;
+76         \textcolor{keywordtype}{int} a,i,m,s;
+77         \textcolor{keywordtype}{char} ty,cr;
+78         \textcolor{keywordflow}{if}((iss>>name>>a>>i>>m>>cr>>s>>ty))\{
+79             girls[x++].\hyperlink{classGirl_a4bff314dba17278eb1093b15f7be80bd}{setDetails}(name,a,i,m,ty,s,cr);
+80         \} \textcolor{keywordflow}{else} \{
+81             \textcolor{keywordflow}{break};
+82         \}
+83     \}
+84 
+85     c = 0;
+86     x = 0;
+90     ifstream giftInp(\textcolor{stringliteral}{"gift.dat"});
+91     \textcolor{keywordflow}{while}(getline(giftInp,line)) \{
+92         \textcolor{keywordflow}{if}(c++ == 0) \textcolor{keywordflow}{continue};
+93         istringstream iss(line);
+94         \textcolor{keywordtype}{int} id,p,v;
+95         \textcolor{keywordtype}{char} ty;
+96         \textcolor{keywordflow}{if}((iss>>\textcolor{keywordtype}{id}>>p>>ty>>v))\{
+97             gifts[x++].\hyperlink{classGift_abc74fbed8b31b5bb7745b3e0c934da9e}{setDetail}(\textcolor{keywordtype}{id},p,ty,0);
+98         \} \textcolor{keywordflow}{else} \{
+99             \textcolor{keywordflow}{break};
+100         \}
+101     \}
+102     
+103     c = 0;
+107     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0 ; i < \hyperlink{Ques4_8cpp_aed9ea78689ecce0b7264c02c7f8a9a54}{G}; i++) \{
+108         \textcolor{keywordflow}{if}(girls[i].getCriterion() == \textcolor{charliteral}{'A'}) \{
+109             \textcolor{keywordtype}{int} max= -99;
+110             \textcolor{keywordtype}{int} ind = -1;
+111             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}{B}; j++) \{
+112                 \textcolor{keywordflow}{if}(boys[j].getAttractiveness() > max && boys[j].getStatus() == 0) \{
+113                     \textcolor{keywordflow}{if}(boys[j].getBudget() > girls[i].getMaintenance()) \{
+114                         \textcolor{keywordflow}{if}(girls[i].getAttractiveness() > boys[j].getThreshold()) \{
+115                             max = boys[j].\hyperlink{classBoy_a814ef4919f2ac86c6ee70f9698afad3d}{getAttractiveness}();
+116                             ind = j;
+117                         \}
+118                     \}
+119                 \}
+120             \}
+121         
+122             \textcolor{keywordflow}{if}(ind != -1) \{
+123                 boys[ind].\hyperlink{classBoy_a3d29dcc4137fbfc0306cbd7df82781c3}{setStatus}(1);
+124                 girls[i].\hyperlink{classGirl_a201527323b3fabac4b089f003b8fcc4a}{setStatus}(1);
+125                 couples[c++].\hyperlink{classCouple_a0057d3dfd3939a156cd99f6c5cf32279}{setDetails}(boys[ind].getName(),girls[i].getname()) ; 
+126             \}       
+127         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(girls[i].getCriterion() == \textcolor{charliteral}{'I'}) \{
+128             \textcolor{keywordtype}{int} max= -99;
+129                         \textcolor{keywordtype}{int} ind = -1;
+130                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}{B}; j++) \{
+131                                 \textcolor{keywordflow}{if}(boys[j].getIntelligence() > max && boys[j].getStatus() == 0) \{
+132                                         \textcolor{keywordflow}{if}(boys[j].getBudget() > girls[i].getMaintenance()) \{
+133                                                 \textcolor{keywordflow}{if}(girls[i].getAttractiveness() > boys[j].getThreshold()) \{
+134                                                         max = boys[j].
+      \hyperlink{classBoy_ad52c9e04ab591f3909d2342d6cae0168}{getIntelligence}();
+135                                                         ind = j;
+136                                                 \}
+137                                         \}
+138                                 \}
+139                         \}
+140                           
+141                         \textcolor{keywordflow}{if}(ind != -1) \{
+142                                 boys[ind].\hyperlink{classBoy_a3d29dcc4137fbfc0306cbd7df82781c3}{setStatus}(1);
+143                                 girls[i].\hyperlink{classGirl_a201527323b3fabac4b089f003b8fcc4a}{setStatus}(1);
+144                                 couples[c++].\hyperlink{classCouple_a0057d3dfd3939a156cd99f6c5cf32279}{setDetails}(boys[ind].getName(),girls[i].getname()) ;
+145                         \}
+146 
+147         \} \textcolor{keywordflow}{else} \{
+148             \textcolor{keywordtype}{int} max= -99;
+149                         \textcolor{keywordtype}{int} ind = -1;
+150                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}{B}; j++) \{
+151                                 \textcolor{keywordflow}{if}(boys[j].getBudget() > max && boys[j].getStatus() == 0) \{
+152                                         \textcolor{keywordflow}{if}(boys[j].getBudget() > girls[i].getMaintenance()) \{
+153                                                 \textcolor{keywordflow}{if}(girls[i].getAttractiveness() > boys[j].getThreshold()) \{
+154                                                         max = boys[j].\hyperlink{classBoy_a05c48b12091ebcad44ba86ba88514ac5}{getBudget}();
+155                                                         ind = j;
+156                                                 \}
+157                                         \}
+158                                 \}
+159                         \}
+160                           
+161                         \textcolor{keywordflow}{if}(ind != -1) \{
+162                                 boys[ind].\hyperlink{classBoy_a3d29dcc4137fbfc0306cbd7df82781c3}{setStatus}(1);
+163                                 girls[i].\hyperlink{classGirl_a201527323b3fabac4b089f003b8fcc4a}{setStatus}(1);
+164                                 couples[c++].\hyperlink{classCouple_a0057d3dfd3939a156cd99f6c5cf32279}{setDetails}(boys[ind].getName(),girls[i].getname()) ;
+165                         \}
+166             
+167         \}
+168     \}
+169 
+173     logFile<<\textcolor{stringliteral}{"-----------------COUPLES-------------------\(\backslash\)n\(\backslash\)n"};
+174 
+175     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0 ;i < \hyperlink{Ques4_8cpp_ac4cf4b2ab929bd23951a8676eeac086b}{C}; i++) \{
+176         logFile<<\textcolor{stringliteral}{"Boy b"}<<couples[i].\hyperlink{classCouple_a092cbc580ea255febc3eb211c5f56512}{getBoy}()<<\textcolor{stringliteral}{" and Girl g"}<<couples[i].
+      \hyperlink{classCouple_a653983df7e331c0534ae2ce42e9856c5}{getGirl}()<<\textcolor{stringliteral}{"\(\backslash\)n"};
+177         
+178     \}
+179 
+183     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0  ; i< \hyperlink{Ques4_8cpp_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}-1; i++) \{
+184         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = i+1; j < \hyperlink{Ques4_8cpp_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}; j++) \{
+185             \textcolor{keywordflow}{if}(gifts[j].getprice() < gifts[i].getprice()) \{
+186                 \hyperlink{Ques4_8cpp_ac70f752855ee1cf9ceaa2d749bbad17d}{swap}(gifts[j],gifts[i]);
+187             \}
+188         \}
+189     \}
+190 
+194     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i  = 0 ;i < \hyperlink{Ques4_8cpp_ac4cf4b2ab929bd23951a8676eeac086b}{C}; i++) \{
+195         \textcolor{keywordtype}{int} boy = couples[i].\hyperlink{classCouple_a092cbc580ea255febc3eb211c5f56512}{getBoy}()[0] - 48;
+196         \textcolor{keywordtype}{int} girl = couples[i].\hyperlink{classCouple_a653983df7e331c0534ae2ce42e9856c5}{getGirl}()[0] - 48;
+197         \textcolor{keywordtype}{int} mc = girls[girl-1].\hyperlink{classGirl_a6192affb0721b385d2c5d83a011a869e}{getMaintenance}();
+198         \textcolor{keywordtype}{int} bud = boys[boy-1].\hyperlink{classBoy_a05c48b12091ebcad44ba86ba88514ac5}{getBudget}();
+199         \textcolor{keywordtype}{int} x = bud - mc;
+200         \textcolor{keywordtype}{char} bt = boys[boy-1].\hyperlink{classBoy_a01accc077c0824f7e28cfe391f7851c7}{getType}(); 
+201     
+202         \textcolor{keywordflow}{if}(bt == \textcolor{charliteral}{'M'}) \{
+203             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0 ; j < \hyperlink{Ques4_8cpp_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}; j++) \{
+204                 
+205                 \textcolor{keywordflow}{if}(gifts[j].getprice() <= mc && gifts[j].getStatus() == 0) \{
+206                     couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+207                     gifts[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+208                     mc = mc - gifts[j].\hyperlink{classGift_aa36f2b437e93ede1d2569e489b493441}{getprice}();
+209                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( gifts[j].getprice() <= x +mc ) \{
+210                     \textcolor{keywordflow}{if}( gifts[j].getStatus() == 0)  \{               
+211                         couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+212                         gifts[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+213                         \textcolor{keywordflow}{break};
+214                     \}
+215                 \} \textcolor{keywordflow}{else} \{
+216                     \textcolor{keywordflow}{break};
+217                 \}
+218             \} 
+219         \} \textcolor{keywordflow}{else}  \textcolor{keywordflow}{if}(bt == \textcolor{charliteral}{'N'}) \{
+220             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = Gf-1 ; j >= 0; j--) \{
+221                 \textcolor{keywordflow}{if}(gifts[j].getprice() <= bud && gifts[j].getStatus() == 0) \{
+222                     couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+223                     gifts[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+224                     bud = bud- gifts[j].\hyperlink{classGift_aa36f2b437e93ede1d2569e489b493441}{getprice}();
+225                 \}
+226             \}
+227         \} \textcolor{keywordflow}{else} \{
+228             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0 ; j < \hyperlink{Ques4_8cpp_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}; j++) \{
+229                 \textcolor{keywordflow}{if}(gifts[j].getprice() <= mc && gifts[j].getStatus() == 0) \{
+230                     couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+231                     gifts[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+232                     mc = mc - gifts[j].\hyperlink{classGift_aa36f2b437e93ede1d2569e489b493441}{getprice}();
+233                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(gifts[j].getprice() <= x +mc) \{
+234                     \textcolor{keywordflow}{if}( gifts[j].getStatus() == 0)  \{               
+235                         couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+236                         gifts[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+237                         \textcolor{keywordflow}{break};
+238                     \}
+239                 \} \textcolor{keywordflow}{else} \{
+240                     \textcolor{keywordflow}{break};
+241                 \}
+242             \}
+243         \}
+244     \}
+245     
+246     
+247 
+251     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{Ques4_8cpp_ac4cf4b2ab929bd23951a8676eeac086b}{C}; i++) \{
+252         \textcolor{keywordtype}{int} boy = couples[i].\hyperlink{classCouple_a092cbc580ea255febc3eb211c5f56512}{getBoy}()[0] - 48;
+253         \textcolor{keywordtype}{int} girl = couples[i].\hyperlink{classCouple_a653983df7e331c0534ae2ce42e9856c5}{getGirl}()[0] - 48;
+254 
+255         \textcolor{keywordtype}{int} mc = girls[girl-1].\hyperlink{classGirl_a6192affb0721b385d2c5d83a011a869e}{getMaintenance}();
+256         \textcolor{keywordtype}{int} bud = boys[boy-1].\hyperlink{classBoy_a05c48b12091ebcad44ba86ba88514ac5}{getBudget}();
+257         \textcolor{keywordtype}{int} x1 = bud - mc;
+258 
+259         \textcolor{keywordtype}{char} bt = boys[boy-1].\hyperlink{classBoy_a01accc077c0824f7e28cfe391f7851c7}{getType}();
+260         \textcolor{keywordtype}{char} gt = girls[girl-1].\hyperlink{classGirl_af26252dbf5784c2c79744dd4652a3bf2}{getType}();
+261         
+262         \textcolor{keywordtype}{int} hb = 0;
+263         \textcolor{keywordtype}{int} hg = 0;
+264 
+265         \textcolor{keywordtype}{int} total = 0;
+266     
+267         
+268         \textcolor{keywordtype}{int} * arr = couples[i].\hyperlink{classCouple_a80cef2647acb3903936372a0d70cf9cc}{getGifts}();
+269         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0 ; j < couples[i].\hyperlink{classCouple_a05a3bbd0d8d6b149ae04f5306acd4439}{getNum}(); j++) \{
+270             total += gifts[arr[j]-1].\hyperlink{classGift_aa36f2b437e93ede1d2569e489b493441}{getprice}();
+271         \}
+272     
+273         \textcolor{keywordflow}{if}(bt == \textcolor{charliteral}{'M'}) \{
+274             hb = bud-total;
+275         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bt == \textcolor{charliteral}{'N'}) \{
+276             hb = hg;
+277         \} \textcolor{keywordflow}{else} \{
+278             hb = girls[girl-1].\hyperlink{classGirl_afe73c4c4f180aa8f5e0bc4f87455ec0b}{getIntelligence}();
+279         \}
+280 
+281         \textcolor{keywordflow}{if}(gt == \textcolor{charliteral}{'C'}) \{
+282             hg = log(abs(mc-total));
+283         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(gt == \textcolor{charliteral}{'N'}) \{
+284             hg = abs(mc-total);
+285         \} \textcolor{keywordflow}{else} \{
+286             hg = exp(abs(mc-total));
+287         \}
+288         couples[i].\hyperlink{classCouple_a19afd8575f26caa557115a106b6a4928}{setHappiness}(hb + abs(hg));
+289         
+290     \}
+291 
+292 
+296     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0  ; i< C-1; i++) \{
+297         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = i+1; j < \hyperlink{Ques4_8cpp_ac4cf4b2ab929bd23951a8676eeac086b}{C}; j++) \{
+298             \textcolor{keywordflow}{if}(couples[i].getHappiness() > couples[j].getHappiness()) \{
+299                 \hyperlink{Ques4_8cpp_a9ed5e5ebda90f206f83cd424ebebe79d}{swapC}(couples[i],couples[j]);
+300             \}   
+301         \}
+302     \}
+303     
+304     \textcolor{comment}{/*}
+305 \textcolor{comment}{     *Finding and Printing Least happy Couple}
+306 \textcolor{comment}{     */} 
+307     logFile<<\textcolor{stringliteral}{"\(\backslash\)n---------------------K(== 2) least Happy------------------------\(\backslash\)n\(\backslash\)n"};
+308     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{Ques4_8cpp_a97d832ae23af4f215e801e37e4f94254}{K} ;i++) \{
+309         logFile<<\textcolor{stringliteral}{"Boy b"}<<couples[i].\hyperlink{classCouple_a092cbc580ea255febc3eb211c5f56512}{getBoy}()<<\textcolor{stringliteral}{" and Girl g"}<<couples[i].
+      \hyperlink{classCouple_a653983df7e331c0534ae2ce42e9856c5}{getGirl}()<<\textcolor{stringliteral}{"\(\backslash\)n"};
+310     \}
+311 
+312     \textcolor{comment}{/*}
+313 \textcolor{comment}{     *Forming New Couples}
+314 \textcolor{comment}{     */} 
+315     logFile<<\textcolor{stringliteral}{"\(\backslash\)n------------------New Couples Formed---------------------\(\backslash\)n\(\backslash\)n"};
+316     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} m = 0 ; m < \hyperlink{Ques4_8cpp_a97d832ae23af4f215e801e37e4f94254}{K}; m++) \{
+317         \textcolor{keywordtype}{int} b = couples[m].\hyperlink{classCouple_a092cbc580ea255febc3eb211c5f56512}{getBoy}()[0] - 48;
+318         \textcolor{keywordtype}{int} g = couples[m].\hyperlink{classCouple_a653983df7e331c0534ae2ce42e9856c5}{getGirl}()[0] - 48;
+319         \textcolor{keywordtype}{int} i = g-1;
+320 
+321         \textcolor{keywordflow}{if}(girls[i].getCriterion() == \textcolor{charliteral}{'A'}) \{
+322             \textcolor{keywordtype}{int} max= -99;
+323             \textcolor{keywordtype}{int} ind = -1;
+324             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}{B}; j++) \{
+325                 \textcolor{keywordflow}{if}(boys[j].getAttractiveness() > max && boys[j].getStatus() == 0) \{
+326                     \textcolor{keywordflow}{if}(boys[j].getBudget() > girls[i].getMaintenance()) \{
+327                         \textcolor{keywordflow}{if}(girls[i].getAttractiveness() > boys[j].getThreshold()) \{
+328                             max = boys[j].\hyperlink{classBoy_a814ef4919f2ac86c6ee70f9698afad3d}{getAttractiveness}();
+329                             ind = j;
+330                         \}
+331                     \}
+332                 \}
+333             \}
+334         
+335             \textcolor{keywordflow}{if}(ind != -1) \{
+336                 boys[ind].\hyperlink{classBoy_a3d29dcc4137fbfc0306cbd7df82781c3}{setStatus}(1);
+337                 girls[i].\hyperlink{classGirl_a201527323b3fabac4b089f003b8fcc4a}{setStatus}(1);
+338                 couples[m].\hyperlink{classCouple_a0057d3dfd3939a156cd99f6c5cf32279}{setDetails}(boys[ind].getName(),girls[i].getname()) ; 
+339             \}       
+340         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(girls[i].getCriterion() == \textcolor{charliteral}{'I'}) \{
+341             \textcolor{keywordtype}{int} max= -99;
+342                         \textcolor{keywordtype}{int} ind = -1;
+343                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}{B}; j++) \{
+344                                 \textcolor{keywordflow}{if}(boys[j].getIntelligence() > max && boys[j].getStatus() == 0) \{
+345                                         \textcolor{keywordflow}{if}(boys[j].getBudget() > girls[i].getMaintenance()) \{
+346                                                 \textcolor{keywordflow}{if}(girls[i].getAttractiveness() > boys[j].getThreshold()) \{
+347                                                         max = boys[j].
+      \hyperlink{classBoy_ad52c9e04ab591f3909d2342d6cae0168}{getIntelligence}();
+348                                                         ind = j;
+349                                                 \}
+350                                         \}
+351                                 \}
+352                         \}
+353                           
+354                         \textcolor{keywordflow}{if}(ind != -1) \{
+355                                 boys[ind].\hyperlink{classBoy_a3d29dcc4137fbfc0306cbd7df82781c3}{setStatus}(1);
+356                                 girls[i].\hyperlink{classGirl_a201527323b3fabac4b089f003b8fcc4a}{setStatus}(1);
+357                                 couples[m].\hyperlink{classCouple_a0057d3dfd3939a156cd99f6c5cf32279}{setDetails}(boys[ind].getName(),girls[i].getname()) ;
+358                         \}
+359 
+360         \} \textcolor{keywordflow}{else} \{
+361             \textcolor{keywordtype}{int} max= -99;
+362                         \textcolor{keywordtype}{int} ind = -1;
+363                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{Ques4_8cpp_a111da81ae5883147168bbb8366377b10}{B}; j++) \{
+364                                 \textcolor{keywordflow}{if}(boys[j].getBudget() > max && boys[j].getStatus() == 0) \{
+365                                         \textcolor{keywordflow}{if}(boys[j].getBudget() > girls[i].getMaintenance()) \{
+366                                                 \textcolor{keywordflow}{if}(girls[i].getAttractiveness() > boys[j].getThreshold()) \{
+367                                                         max = boys[j].\hyperlink{classBoy_a05c48b12091ebcad44ba86ba88514ac5}{getBudget}();
+368                                                         ind = j;
+369                                                 \}
+370                                         \}
+371                                 \}
+372                         \}
+373                           
+374                         \textcolor{keywordflow}{if}(ind != -1) \{
+375                                 boys[ind].\hyperlink{classBoy_a3d29dcc4137fbfc0306cbd7df82781c3}{setStatus}(1);
+376                                 girls[i].\hyperlink{classGirl_a201527323b3fabac4b089f003b8fcc4a}{setStatus}(1);
+377                                 couples[m].\hyperlink{classCouple_a0057d3dfd3939a156cd99f6c5cf32279}{setDetails}(boys[ind].getName(),girls[i].getname()) ;
+378                         \}
+379             
+380         \}
+381         
+382         logFile<<\textcolor{stringliteral}{"Boy b"}<<couples[m].\hyperlink{classCouple_a092cbc580ea255febc3eb211c5f56512}{getBoy}()<<\textcolor{stringliteral}{" and Girl g"}<<couples[m].
+      \hyperlink{classCouple_a653983df7e331c0534ae2ce42e9856c5}{getGirl}()<<\textcolor{stringliteral}{"\(\backslash\)n"};
+383         
+384     \}
+385     
+386 
+387     logFile.close();
+388 \}
+\end{DoxyCode}
+\index{Ques4.\+cpp@{Ques4.\+cpp}!swap@{swap}}
+\index{swap@{swap}!Ques4.\+cpp@{Ques4.\+cpp}}
+\subsubsection[{\texorpdfstring{swap(\+Gift \&a, Gift \&b)}{swap(Gift &a, Gift &b)}}]{\setlength{\rightskip}{0pt plus 5cm}void swap (
+\begin{DoxyParamCaption}
+\item[{{\bf Gift} \&}]{a, }
+\item[{{\bf Gift} \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{Ques4_8cpp_ac70f752855ee1cf9ceaa2d749bbad17d}{}\label{Ques4_8cpp_ac70f752855ee1cf9ceaa2d749bbad17d}
+
+\begin{DoxyCode}
+21 \{
+22     \hyperlink{classGift}{Gift} temp = a;
+23     a = b;
+24     b = temp;
+25 \}
+\end{DoxyCode}
+\index{Ques4.\+cpp@{Ques4.\+cpp}!swapC@{swapC}}
+\index{swapC@{swapC}!Ques4.\+cpp@{Ques4.\+cpp}}
+\subsubsection[{\texorpdfstring{swap\+C(\+Couple \&a, Couple \&b)}{swapC(Couple &a, Couple &b)}}]{\setlength{\rightskip}{0pt plus 5cm}void swapC (
+\begin{DoxyParamCaption}
+\item[{{\bf Couple} \&}]{a, }
+\item[{{\bf Couple} \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{Ques4_8cpp_a9ed5e5ebda90f206f83cd424ebebe79d}{}\label{Ques4_8cpp_a9ed5e5ebda90f206f83cd424ebebe79d}
+
+\begin{DoxyCode}
+28 \{
+29     \hyperlink{classCouple}{Couple} temp = a;
+30     a = b;
+31     b = temp;
+32 \}
+\end{DoxyCode}

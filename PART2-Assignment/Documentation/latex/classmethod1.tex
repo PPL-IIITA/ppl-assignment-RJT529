@@ -1,0 +1,112 @@
+\hypertarget{classmethod1}{}\section{method1 Class Reference}
+\label{classmethod1}\index{method1@{method1}}
+
+
+{\ttfamily \#include $<$lib8.\+h$>$}
+
+
+
+Inheritance diagram for method1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classmethod1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for method1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classmethod1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmethod1_a8f2ac4501ad63e68065236359e368864}{allocate} (\hyperlink{classCouple}{Couple} $\ast$couples, \hyperlink{classBoy}{Boy} $\ast$boys, \hyperlink{classGirl}{Girl} $\ast$girls)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{method1@{method1}!allocate@{allocate}}
+\index{allocate@{allocate}!method1@{method1}}
+\subsubsection[{\texorpdfstring{allocate(\+Couple $\ast$couples, Boy $\ast$boys, Girl $\ast$girls)}{allocate(Couple *couples, Boy *boys, Girl *girls)}}]{\setlength{\rightskip}{0pt plus 5cm}void method1\+::allocate (
+\begin{DoxyParamCaption}
+\item[{{\bf Couple} $\ast$}]{couples, }
+\item[{{\bf Boy} $\ast$}]{boys, }
+\item[{{\bf Girl} $\ast$}]{girls}
+\end{DoxyParamCaption}
+)}\hypertarget{classmethod1_a8f2ac4501ad63e68065236359e368864}{}\label{classmethod1_a8f2ac4501ad63e68065236359e368864}
+
+\begin{DoxyCode}
+62 \{
+63     \textcolor{comment}{//Assigning gifts to couples}
+64     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i  = 0 ;i < \hyperlink{dst9_8h_ac4cf4b2ab929bd23951a8676eeac086b}{C}; i++) \{
+65         \textcolor{keywordtype}{int} boy = couples[i].\hyperlink{classCouple_a092cbc580ea255febc3eb211c5f56512}{getBoy}()[0] - 48;
+66         \textcolor{keywordtype}{int} girl = couples[i].\hyperlink{classCouple_a653983df7e331c0534ae2ce42e9856c5}{getGirl}()[0] - 48;
+67         \textcolor{keywordtype}{int} mc = girls[girl-1].\hyperlink{classGirl_a6192affb0721b385d2c5d83a011a869e}{getMaintenance}();
+68         \textcolor{keywordtype}{int} bud = boys[boy-1].\hyperlink{classBoy_a05c48b12091ebcad44ba86ba88514ac5}{getBudget}();
+69         \textcolor{keywordtype}{int} x = bud - mc;
+70         \textcolor{keywordtype}{char} bt = boys[boy-1].\hyperlink{classBoy_a01accc077c0824f7e28cfe391f7851c7}{getType}(); 
+71     
+72         \textcolor{keywordflow}{if}(bt == \textcolor{charliteral}{'M'}) \{
+73             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0 ; j < \hyperlink{couple_8h_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}; j++) \{
+74                 
+75                 \textcolor{keywordflow}{if}(\hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getprice() <= mc && \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getStatus() == 0) \{
+76                     couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+77                     \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+78                     mc = mc - \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].\hyperlink{classGift_aa36f2b437e93ede1d2569e489b493441}{getprice}();
+79                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getprice() <= x +mc ) \{
+80                     \textcolor{keywordflow}{if}( \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getStatus() == 0) \{               
+81                         couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+82                         \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+83                         \textcolor{keywordflow}{break};
+84                     \}
+85                 \} \textcolor{keywordflow}{else} \{
+86                     \textcolor{keywordflow}{break};
+87                 \}
+88             \} 
+89         \} \textcolor{keywordflow}{else}  \textcolor{keywordflow}{if}(bt == \textcolor{charliteral}{'N'}) \{
+90             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = Gf-1 ; j >= 0; j--) \{
+91                 \textcolor{keywordflow}{if}(\hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getprice() <= bud && \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getStatus() == 0) \{
+92                     couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+93                     \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+94                     bud = bud- \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].\hyperlink{classGift_aa36f2b437e93ede1d2569e489b493441}{getprice}();
+95                 \}
+96             \}
+97         \} \textcolor{keywordflow}{else} \{
+98             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0 ; j < \hyperlink{couple_8h_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}; j++) \{
+99                 \textcolor{keywordflow}{if}(\hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getprice() <= mc && \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getStatus() == 0) \{
+100                     couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+101                     \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+102                     mc = mc - \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].\hyperlink{classGift_aa36f2b437e93ede1d2569e489b493441}{getprice}();
+103                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getprice() <= x +mc) \{
+104                     \textcolor{keywordflow}{if}( \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].getStatus() == 0) \{               
+105                         couples[i].\hyperlink{classCouple_a1a621700c479fd808b0caf034f4bd0f5}{setGifts}(j+1);
+106                         \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(1);
+107                         \textcolor{keywordflow}{break};
+108                     \}
+109                 \} \textcolor{keywordflow}{else} \{
+110                     \textcolor{keywordflow}{break};
+111                 \}
+112             \}
+113         \}
+114     \}
+115 
+116     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0 ; j < \hyperlink{couple_8h_a5e0c07e523d4e77a2cafca06feb836f6}{Gf}; j++) \{
+117         \hyperlink{classGiftAllocation_acb46a98c48d5ba73890195a1bd8b28f5}{gifts}[j].\hyperlink{classGift_a8c8a8be33c3abe17bbe4b8da9ac084d6}{setStatus}(0);
+118     \}
+119 
+120 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lib8_8h}{lib8.\+h}\item 
+\hyperlink{lib8_8cpp}{lib8.\+cpp}\end{DoxyCompactItemize}

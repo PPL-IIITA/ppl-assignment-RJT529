@@ -1,0 +1,52 @@
+-----------------COUPLES-------------------
+
+Boy b7 and Girl g1
+Boy b2 and Girl g2
+Boy b4 and Girl g3
+Boy b8 and Girl g4
+Boy b6 and Girl g5
+
+------------------New Couples Formed---------------------
+---------------------Day 0(t == 5)-----------------------
+
+Boy b9 and Girl g5
+Boy b1 and Girl g2
+Boy b4 and Girl g3
+Boy b8 and Girl g4
+Boy b7 and Girl g1
+
+------------------New Couples Formed---------------------
+---------------------Day 1(t == 5)-----------------------
+
+Boy b2 and Girl g5
+Boy b1 and Girl g2
+Boy b4 and Girl g3
+Boy b8 and Girl g4
+Boy b7 and Girl g1
+
+------------------New Couples Formed---------------------
+---------------------Day 2(t == 5)-----------------------
+
+Boy b6 and Girl g5
+Boy b2 and Girl g2
+Boy b4 and Girl g3
+Boy b8 and Girl g4
+Boy b7 and Girl g1
+
+------------------New Couples Formed---------------------
+---------------------Day 3(t == 5)-----------------------
+
+Boy b9 and Girl g5
+Boy b1 and Girl g2
+Boy b4 and Girl g3
+Boy b8 and Girl g4
+Boy b7 and Girl g1
+
+------------------New Couples Formed---------------------
+---------------------Day 4(t == 5)-----------------------
+
+Boy b2 and Girl g5
+Boy b1 and Girl g2
+Boy b4 and Girl g3
+Boy b8 and Girl g4
+Boy b7 and Girl g1
